@@ -1,0 +1,163 @@
+/* Váriaveis de cor */
+
+:root
+{
+    --rosa: #f388aa;
+    --rosaEscuro: #9c2148;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Montserrat', sans-serif;    
+}
+
+/* --- Cabeçalho --- */
+
+header
+{
+    max-width: 1000px;
+    margin: auto;
+}
+header .container
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.cabecalho
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.cabecalho .logo
+{
+    margin-left: 350px;
+}
+
+.logo img 
+{    
+    height: 100px;    
+}
+.opcoes a
+{
+    padding: 10px;
+}
+.opcoes img
+{    
+    width: 30px;
+}
+
+.menu 
+{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.menu a
+{
+    text-decoration: none;
+    margin-right: 40px;
+    color: black;
+}
+
+/* ---- Rodapé ----- */
+
+footer
+{
+    position: relative;
+    top: 1000px;   
+    border-top: 30px solid var(--rosa);
+    /* #b34165 */
+}
+
+footer .container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.redesSociais
+{
+    display: flex;    
+}
+.redesSociais a
+{
+    padding-left: 20px;    
+}
+.redesSociais i
+{
+    color: var(--rosaEscuro);   
+}
+
+.contato-pagamento
+{
+    display: flex;
+    padding: 50px;  
+}
+.contato
+{
+    border-right: 1px solid var(--rosa);
+    padding: 30px; 
+    max-width:300px;    
+}
+
+.contato p
+{
+   line-height: 30px;
+   font-size: 20px;
+}
+
+.contato .telefone
+{
+    display: flex;
+    align-items: center;
+}
+.telefone i
+{
+    margin-right: 10px;
+    color: var(--rosaEscuro);
+}
+.contato .email
+{
+    display: flex;
+    align-items: center;
+}
+.email i
+{
+    margin-right: 10px;
+    color: var(--rosaEscuro);
+}
+.pagamento
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.pagamento img
+{
+    height: 100px;
+    margin: 10px;    
+}
+.pagamento #logoPix
+{
+    width: 200px;
+    height: 70px;
+}
