@@ -73,6 +73,15 @@ header .container
     margin-right: 40px;
     color: black;
 }
+.menu-opcoes a{
+    transition:  color .5s;
+    
+}
+.menu-opcoes a:hover{
+    color: var(--rosa);
+    
+    
+}
 
 /* ---- Rodapé ----- */
 
@@ -81,7 +90,6 @@ footer
     position: relative;
     top: 1000px;   
     border-top: 30px solid var(--rosa);
-    /* #b34165 */
 }
 
 footer .container
@@ -161,3 +169,4 @@ footer .container
     width: 200px;
     height: 70px;
 }
+
