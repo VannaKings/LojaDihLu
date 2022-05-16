@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="CSS/style.css">    
+    <link rel="stylesheet" href="CSS/main.css">   
+    <link rel="stylesheet" href="CSS/roupas.css"> 
     
     <!--Icones font awesome-->
     <script src="https://kit.fontawesome.com/0169495cc4.js" crossorigin="anonymous"></script>
@@ -22,10 +23,36 @@
 </head>
 <body>
     <!-- Cabeçalho -->
-    <div id="header"></div> 
-    <!-- Rodapé -->
-           
+    <div id="header"></div>
+    
+    <main class="secaoRoupas">    
+        <section class="secaoRoupas_cabecalho">
+            <div class="container">
+                <div class="titulo">
+                    <p>Roupas</p>                   
+                </div>
+            </div>
+        </section>
+        <section class="secaoRoupas_conteudo">
+            <div class="container">
+                <ul class="secaoRoupas_filtro">
+                    <li>Blusas</li>
+                    <li>Jaquetas</li>
+                    <li>Calças</li>
+                    <li>Shorts</li>
+                    <li>Vestidos</li>
+                </ul>
+                <div class="secaoRoupas_conteudo">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Rodapé -->           
         <div id="footer"></div>
+    <!-- JS -->
         <script>
         $("#header").load("header.html");
         $("#footer").load("footer.html");
