@@ -74,13 +74,11 @@ header .container
     color: black;
 }
 .menu-opcoes a{
-    transition:  color .5s;
-    
+    transition:  color .1s;   
 }
+
 .menu-opcoes a:hover{
-    color: var(--rosa);
-    
-    
+    color: var(--rosa);   
 }
 
 /* ---- Rodapé ----- */
