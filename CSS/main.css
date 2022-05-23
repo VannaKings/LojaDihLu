@@ -20,7 +20,11 @@ body
 {
     font-family: 'Montserrat', sans-serif;    
 }
-
+.container
+{
+    margin: auto;
+    max-width: 1000px;   
+}
 /* --- Cabeçalho --- */
 
 header
@@ -65,13 +69,13 @@ header .container
 {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
 }
 .menu a
 {
     text-decoration: none;
     margin-right: 40px;
-    color: black;
+    color: var(--rosaEscuro);
 }
 .menu-opcoes a{
     transition:  color .1s;   
@@ -84,9 +88,7 @@ header .container
 /* ---- Rodapé ----- */
 
 footer
-{
-    position: relative;
-    top: 1000px;   
+{   
     border-top: 30px solid var(--rosa);
 }
 
