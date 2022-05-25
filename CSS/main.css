@@ -118,7 +118,7 @@ footer .container
 .contato-pagamento
 {
     display: flex;
-    padding: 50px;  
+    padding: 30px;  
 }
 .contato
 {
@@ -131,8 +131,13 @@ footer .container
 {
    line-height: 30px;
    font-size: 20px;
+   margin-bottom: 10px;
 }
-
+.contato p a
+{
+    text-decoration: none;
+    color: black;
+}
 .contato .telefone
 {
     display: flex;

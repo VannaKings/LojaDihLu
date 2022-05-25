@@ -26,7 +26,7 @@
 {
     display: flex;
     height: 100%;
-    max-width: 1010px;
+    max-width: 980px;
     align-items: center;
 }
 
@@ -39,7 +39,7 @@
 
 /*  Seção Roupas */
 
-.secaoRoupas .container
+.secaoPrincipal .container
 {
     display: flex;
     padding: 40px 10px;
@@ -47,12 +47,12 @@
 
 /*  Seção Roupas ---- filtro */
 
-.secaoRoupas_filtro
+.secaoPrincipal_filtro
 {
     width: 500px;
     /* box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.15); */
 }
-.secaoRoupas_filtro i
+.secaoPrincipal_filtro i
 {
     color: var(--rosaEscuro);
     font-size: 24px;
@@ -62,7 +62,7 @@
     font-weight: bold;
     font-size: 24px;
 }
-.secaoRoupas_filtro p
+.secaoPrincipal_filtro p
 {
     padding: 20px 0;
     width: 100%;
@@ -71,24 +71,24 @@
     margin-bottom: 20px
 }
 
-.secaoRoupas_filtro strong
+.secaoPrincipal_filtro strong
 {
     font-weight: bold;
 }
 
-.secaoRoupas_filtro ul
+.secaoPrincipal_filtro ul
 {
     list-style: none;
     padding: 20px 0;
 }
-.secaoRoupas_filtro li
+.secaoPrincipal_filtro li
 {
     margin-bottom: 20px;
     cursor: pointer;
 }
 /*  Seção Roupas ---- conteudo */
 
-.secaoRoupas_conteudo 
+.secaoPrincipal_conteudo 
 {
     margin-left: 50px;
     display: grid;
