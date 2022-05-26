@@ -1,0 +1,53 @@
+/* Váriaveis de cor */
+
+:root
+{
+    --rosa: #f388aa;
+    --rosaEscuro: #9c2148;
+}
+
+/* ----Seção Vantagens---- */
+
+.vantagens
+{
+    background-color: var(--rosaEscuro);
+}
+.vantagens .container
+{
+    display: flex;
+    justify-content: space-around;  
+}
+.vantagens .container div
+{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 20px;
+    min-width: 200px;
+}
+.vantagens i
+{
+    font-size: 35px;
+    color: white;
+}
+.vantagens p
+{
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    width: 200px;
+    font-size: 14px;
+}
+
+/* ---- Seção promoções---- */
+
+.promocoes .container
+{
+  display: flex;
+  justify-content: space-between;
+}
+.promocoes img
+{
+    height: 500px;
+    width: 380px;
+}

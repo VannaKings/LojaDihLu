@@ -26,7 +26,7 @@
 {
     display: flex;
     height: 100%;
-    max-width: 980px;
+    max-width: 1100px;
     align-items: center;
 }
 
@@ -42,6 +42,7 @@
 .secaoPrincipal .container
 {
     display: flex;
+    justify-content: center;
     padding: 40px 10px;
 }
 
@@ -49,7 +50,7 @@
 
 .secaoPrincipal_filtro
 {
-    width: 500px;
+    max-width: 500px;
     /* box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.15); */
 }
 .secaoPrincipal_filtro i
@@ -93,7 +94,8 @@
     margin-left: 50px;
     display: grid;
     justify-content: center;
-    grid-template-columns: 250px 250px 250px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
     /* align-items: center; */
 }
 .produto
