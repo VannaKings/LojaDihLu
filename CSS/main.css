@@ -3,7 +3,8 @@
 :root
 {
     --rosa: #f388aa;
-    --rosaEscuro: #9c2148;
+    /* --rosaEscuro: #9c2148; */
+    --rosaEscuro: #c93966;
 }
 
 *{
@@ -34,7 +35,6 @@ header .container
     flex-direction: column;
     max-width: 1000px;
     padding: 20px;
-    
 }
 
 .cabecalho
@@ -83,6 +83,71 @@ header .container
     color: var(--rosa);   
 }
 
+/*----Seção Cadastro---- */
+
+.secaoCadastro
+{
+    margin: 50px 0 50px 0;
+}
+.secaoCadastro .container
+{
+    border: 4px solid var(--rosa);
+    padding: 30px;
+    max-width: 1000px;
+}
+.secaoCadastro_conteudo
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.secaoCadastro_conteudo .descricao
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+.secaoCadastro_conteudo .descricao h2
+{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(70, 70, 70);
+}
+.secaoCadastro_conteudo strong 
+{
+    color: var(--rosa);
+}
+.secaoCadastro_conteudo .descricao p
+{
+    color: var(--rosaEscuro);
+    font-weight: bold;
+    padding: 20px 0px;
+}
+.cadastro
+{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-column-gap: 20px;
+}
+.cadastro button
+{
+    padding: 10px;
+    color: white;
+    background-color: var(--rosaEscuro);
+    cursor: pointer;
+}
+.cadastro button:hover
+{
+    background-color: var(--rosa);
+}
+.cadastro input
+{
+    border: none;
+    border-bottom: 2px solid var(--rosa);
+    outline-style: none;
+}
+
 /* ---- Rodapé ----- */
 
 footer
@@ -102,16 +167,22 @@ footer .container
 .redesSociais
 {
     display: flex;
-    margin-bottom: 10px;    
+    margin-bottom: 15px;
+    align-items: center; 
 }
-.redesSociais a
+.redesSociais p
 {
-    padding-left: 20px;    
+    font-size: 24px;
+    margin: 0;
+    margin-right: 15px;
 }
 .redesSociais i
 {
-    color: var(--rosaEscuro);   
+    font-size: 30px;
+    color: var(--rosaEscuro); 
+    margin-right: 15px;
 }
+
 .contato-pagamento
 {
     display: flex;
