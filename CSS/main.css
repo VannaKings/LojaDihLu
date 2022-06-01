@@ -5,6 +5,7 @@
     --rosa: #f388aa;
     /* --rosaEscuro: #9c2148; */
     --rosaEscuro: #c93966;
+    --preto: rgb(70, 70, 70);
 }
 
 *{
@@ -20,6 +21,10 @@
 body
 {
     font-family: 'Montserrat', sans-serif;    
+}
+p
+{
+    color:var(--preto) ;
 }
 .container
 {
@@ -113,6 +118,7 @@ header .container
     font-size: 18px;
     font-weight: bold;
     color: rgb(70, 70, 70);
+    text-align: center;
 }
 .secaoCadastro_conteudo strong 
 {

@@ -14,7 +14,6 @@
     vertical-align: baseline;
     box-sizing: border-box;
 }
-
 /* Seção roupas ---- Cabeçalho */
 
 .secaoCabecalho
@@ -27,18 +26,18 @@
 {
     display: flex;
     height: 100%;
-    max-width: 1100px;
     align-items: center;
+    justify-content: center;
 }
-
 .secaoCabecalho_titulo p
 {
-
     color: white;
     font-size: 30px;
+    font-style: italic;
+    margin: 0;
 }
 
-/*  Seção Roupas */
+/*  Seção Produtos */
 
 .secaoPrincipal .container
 {
@@ -47,21 +46,48 @@
     padding: 40px 10px;
 }
 
-/*  Seção Roupas ---- filtro */
+.container-conteudo
+{
+    display: flex;
+    flex-direction: column;
+}
+.pagination
+{
+    justify-content: center;
+    margin: 10px 0 50px 0;
+}
+.page-link
+{
+    color: var(--rosaEscuro);
+}
+.page-link:hover
+{
+    color: white;
+    background-color: #f388aa;
+}
+
+/*  Seção Produtos ---- filtro */
 
 .secaoPrincipal_filtro
 {
     max-width: 500px;
     /* box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.15); */
 }
-.secaoPrincipal_filtro i
+.titulo_filtro
 {
-    color: var(--rosaEscuro);
-    font-size: 24px;
+    display: flex;
+    align-items: center;
 }
+
 .titulo_filtro strong
 {
     font-weight: bold;
+    font-size: 24px;
+}
+
+.secaoPrincipal_filtro i
+{
+    color: var(--rosaEscuro);
     font-size: 24px;
 }
 .secaoPrincipal_filtro p
@@ -90,7 +116,7 @@
 }
 /*  Seção Roupas ---- conteudo */
 
-.secaoPrincipal_conteudo 
+.conteudo-produtos 
 {
     margin-left: 50px;
     display: grid;
@@ -105,71 +131,27 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 .produto p
 {
     padding-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
 }
-
-/*----Seção Cadastro---- */
-.secaoCadastro
+.produto strong
 {
-    margin: 30px 0 50px 0;
-}
-.secaoCadastro .container
-{
-    border: 4px solid var(--rosa);
-    padding: 30px;
-}
-.secaoCadastro_conteudo
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.secaoCadastro_conteudo .descricao
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-}
-.secaoCadastro_conteudo .descricao h2
-{
-    font-size: 18px;
     font-weight: bold;
-    color: rgb(70, 70, 70);
+    color: black;
 }
-.secaoCadastro_conteudo strong 
+.produto img
 {
-    color: var(--rosa);
+    width: 180px;
+    height: 180px;
 }
-.secaoCadastro_conteudo .descricao p
+.produto .preco
 {
     color: var(--rosaEscuro);
-    font-weight: bold;
-    padding: 20px 0px;
-}
-.cadastro
-{
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-column-gap: 20px;
-}
-.cadastro button
-{
-    padding: 10px;
-    color: white;
-    background-color: var(--rosaEscuro);
-    cursor: pointer;
-}
-.cadastro button:hover
-{
-    background-color: var(--rosa);
-}
-.cadastro input
-{
-    border: none;
-    border-bottom: 2px solid var(--rosa);
-    outline-style: none;
+    font-size: 20px;
+    text-decoration: none;
 }

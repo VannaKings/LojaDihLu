@@ -65,11 +65,12 @@
 
 .tituloSecao
 {
-    font-weight: bold;
+   
+    color: var(--rosaEscuro);
+    font-size: 30px;
     font-style: italic;
-    color:var(--rosaEscuro);
 
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 figure{
@@ -137,7 +138,6 @@ figcaption{
 {
     color: white;
     margin-bottom: 50px;
-    font-style: italic;
     font-size: 24px;
 }
 
@@ -149,6 +149,7 @@ figcaption{
 .avaliacoes-carrossel p
 {
     font-style: italic;
+    color: white;
 }
 .avaliacoes-carrossel .nomeCliente
 {
