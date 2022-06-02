@@ -2,7 +2,8 @@
 {
     --rosa: #f388aa;
     /* --rosaEscuro: #9c2148; */
-    --rosaEscuro: #c93966;
+    --rosaEscuro: #c31c51;
+    --preto: rgb(70, 70, 70);
 }
 
 *{
@@ -18,8 +19,8 @@
 
 .secaoCabecalho
 {
-    background-color: var(--rosa);
-    height: 120px;
+    background-color: var(--rosaEscuro);
+    height: 100px;
 }
 
 .secaoCabecalho .container
@@ -32,7 +33,7 @@
 .secaoCabecalho_titulo p
 {
     color: white;
-    font-size: 30px;
+    font-size: 34px;
     font-style: italic;
     margin: 0;
 }

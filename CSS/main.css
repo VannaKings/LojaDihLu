@@ -4,7 +4,8 @@
 {
     --rosa: #f388aa;
     /* --rosaEscuro: #9c2148; */
-    --rosaEscuro: #c93966;
+    /* --rosaEscuro: #c93966; */
+    --rosaEscuro: #c31c51;
     --preto: rgb(70, 70, 70);
 }
 
@@ -96,7 +97,7 @@ header .container
 }
 .secaoCadastro .container
 {
-    border: 4px solid var(--rosa);
+    border: 4px solid var(--rosaEscuro);
     padding: 30px;
     max-width: 1000px;
 }
@@ -158,7 +159,7 @@ header .container
 
 footer
 {   
-    border-top: 30px solid var(--rosa);
+    border-top: 30px solid var(--rosaEscuro);
 }
 
 footer .container

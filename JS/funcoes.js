@@ -1,7 +1,7 @@
 $('.destaque').slick({
     infinite: true,
     speed: 300,
-    slidesToShow: 4,
+    slidesToShow: 2,
     slidesToScroll: 1,
     // autoplay: true,
     // autoplaySpeed: 2000,
@@ -11,7 +11,7 @@ $('.destaque').slick({
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true
         }

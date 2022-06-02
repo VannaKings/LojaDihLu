@@ -49,13 +49,13 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="imgs/foto01.jpg" class="d-block w-100" alt="...">
+            <img src="imgs/banner.gif" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="imgs/foto02.jpg" class="d-block w-100" alt="...">
+            <img src="imgs/banner2.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="imgs/foto03.jpg" class="d-block w-100" alt="...">
+            <img src="imgs/bannerFrete.png" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -84,50 +84,58 @@
         </div>
       </div> 
     </section>
-
-    <!-- <section class="promocoes">
-      <div class="container">      
-          <img src="imgs/placeholder.png" alt="">     
-          <img src="imgs/placeholder.png" alt="">      
-          <img src="imgs/placeholder.png" alt="">        
-      </div>      
-    </section> -->
-
-    <section class="secaoCarrosel">
-      <!-- Carrosel destaques -->
-
+    <!-- Seção destaques -->
+    <section>     
+      <!-- Carrosel -->
       <div class="destaques-carrossel">
-        <div class="container">
+        <div class="container-titulo">
                 
-          <h2 class="tituloSecao">
+          <h2 class="tituloPrincipal">
             <!-- <i class="fa-solid fa-ranking-star"></i>  -->
-            Destaques
-          </h2>          
-           
+            Destaque da semana
+          </h2> 
+          <div class="decoracao"></div>
         </div>
-        <div class="container-carrossel">
-          <div id="arrow-prev" class="arrow"><i class="fa-solid fa-chevron-left"></i></div>
-          <div class="carrossel destaque responsive">
-              <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 1</p>R$: XX,XX</figcaption></figure>
-              <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 2</p>R$: XX,XX</figcaption></figure>
-              <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 3</p>R$: XX,XX</figcaption></figure>
-              <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 4</p>R$: XX,XX</figcaption></figure>
-              <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 5</p>R$: XX,XX</figcaption></figure>
-              <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 6</p>R$: XX,XX</figcaption></figure>
-              <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 7</p>R$: XX,XX</figcaption></figure>
-              <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 8</p>R$: XX,XX</figcaption></figure>            
+
+        <div class="container-destaque">
+          
+          <div class="container-imagem">
+            <figure class="destaque-imagem">
+              <img src="imgs/destaqueAmor.png" class="imagemPromocional">
+              <figcaption> <strong>50% OFF </strong> para presentear seu amor!<i class="fa-solid fa-heart"></i></figcaption>
+            </figure>
           </div>
-          <div id="arrow-next" class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+          <div class="container-carrossel">
+            <div id="arrow-prev" class="arrow"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="carrossel destaque responsive">
+                <figure><img src="imgs/Vestidos/vestido-acinturado-floral.JPG" alt=""><figcaption><p>Roupinha 1</p>R$: XX,XX</figcaption></figure>
+                <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 2</p>R$: XX,XX</figcaption></figure>
+                <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 3</p>R$: XX,XX</figcaption></figure>
+                <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 4</p>R$: XX,XX</figcaption></figure>
+                <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 5</p>R$: XX,XX</figcaption></figure>
+                <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 6</p>R$: XX,XX</figcaption></figure>
+                <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 7</p>R$: XX,XX</figcaption></figure>
+                <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 8</p>R$: XX,XX</figcaption></figure>            
+            </div>
+            <div id="arrow-next" class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+          </div>
+
         </div>
       </div>
 
-      <!-- Carrosel novidades -->
+    </section>
+    <!-- Carrosel novidades -->
+    <section>      
       <div class="novidades-carrossel">
 
-        <h2 class="tituloSecao">
-          <!-- <i class="fa-solid fa-bag-shopping"></i>  -->
-          Novidades
-        </h2>  
+        <div class="container-tituloSecao">
+          <div class="decoracao2"></div>
+          <h3 class="tituloSecao">
+            <a href="novidades.html">Novidades</a>
+          </h3>          
+        </div>  
+
         <div class="container-carrossel">
           <div id="arrow-prev1" class="arrow"><i class="fa-solid fa-chevron-left"></i></div>
           <div class="carrossel novidade responsive">
@@ -144,43 +152,76 @@
         </div>
       </div>
 
-      <!-- Carrosel avaliações -->
-      <section class="secaoAvaliacao">
-        <div class="avaliacoes-carrossel">
-         
-          <h2 class="tituloSecao">
-            A satisfação de nossas clientes <i class="fa-solid fa-heart"></i>
-          </h2> 
-          
-          <div class="container-carrossel">
-            <div id="arrow-prev2" class="arrow"><i class="fa-solid fa-chevron-left"></i></div>
-            <div class="carrossel avaliacao responsive">
-                <div>
-                  <p> "Comprei na Dih e nunca me arrependi, looks incríveis e muito amor no atendimento."</p>
-                  <p class="nomeCliente">Noely Santos</p>
-                </div>
-                <div>
-                  <p>"As roupas são incríveis!! vestem super bem e valorizam meu corpo, fora os produtinhos cósmeticos que são muito bons. Amei!!"</p>
-                  <p class="nomeCliente">Samantha Oliveira</p>
-                </div>
-                <div>
-                  <p>"Recomendo muito!! já virou minha loja favorita, tantas opções lindas e fiquei satisfeita desde a primeira compra."</p>
-                  <p class="nomeCliente">Sabrina Kellyne</p>
-                </div>
-                <div>
-                  <p>"Simplesmente apaixonada por essa loja, produtinhos maravilhosos e roupas super estilosas, comprarei muito aqui ainda."</p>
-                  <p class="nomeCliente">Marisa Mattos</p>
-                </div>
-                <div>
-                  <p>"Despois que comecei a comprar aqui meu astral até subiu, muita gentileza e amor em cada atendimento, além de produtos e roupas muito top!!"</p>
-                  <p class="nomeCliente">Claudia Cristina </p>
-                </div>          
-            </div>
-            <div id="arrow-next2" class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+    </section>
+
+    <section class="secaoMenu">
+
+      <h2> Confira nossos principais produtos</h2>
+      <div class="decoracao"></div>
+
+      <div class="container">
+
+        <div class="fundo">
+          <div class="roupas">
+            <a href="roupas.html">Roupas</a>
           </div>
         </div>
-      </section>      
+        <div class="fundo">
+          <div class="acessorios">
+            <a href="acessorios.html">Acessórios</a>
+          </div>
+        </div>
+        <div class="fundo">
+          <div class="colecoes">
+            <a href="colecoes.html">Coleções</a> 
+          </div>
+        </div>
+        <div class="fundo">
+          <div class="calcados">
+            <a href="calcados.html">Calçados</a>
+          </div>
+        </div>
+      </div>
+
     </section>
+
+    <!-- Carrosel avaliações -->
+    <section class="secaoAvaliacao">
+      <div class="avaliacoes-carrossel">
+        
+        <h2 class="tituloSecao">
+          A satisfação de nossas clientes <i class="fa-solid fa-heart"></i>
+        </h2> 
+        
+        <div class="container-carrossel">
+          <div id="arrow-prev2" class="arrow"><i class="fa-solid fa-chevron-left"></i></div>
+          <div class="carrossel avaliacao responsive">
+              <div>
+                <p> "Comprei na Dih e nunca me arrependi, looks incríveis e muito amor no atendimento."</p>
+                <p class="nomeCliente">Noely Santos</p>
+              </div>
+              <div>
+                <p>"As roupas são incríveis!! vestem super bem e valorizam meu corpo, fora os produtinhos cósmeticos que são muito bons. Amei!!"</p>
+                <p class="nomeCliente">Samantha Oliveira</p>
+              </div>
+              <div>
+                <p>"Recomendo muito!! já virou minha loja favorita, tantas opções lindas e fiquei satisfeita desde a primeira compra."</p>
+                <p class="nomeCliente">Sabrina Kellyne</p>
+              </div>
+              <div>
+                <p>"Simplesmente apaixonada por essa loja, produtinhos maravilhosos e roupas super estilosas, comprarei muito aqui ainda."</p>
+                <p class="nomeCliente">Marisa Mattos</p>
+              </div>
+              <div>
+                <p>"Despois que comecei a comprar aqui meu astral até subiu, muita gentileza e amor em cada atendimento, além de produtos e roupas muito top!!"</p>
+                <p class="nomeCliente">Claudia Cristina </p>
+              </div>          
+          </div>
+          <div id="arrow-next2" class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+      </div>
+    </section>      
+    
     <!-- Seção Cadastro -->
     <section class="secaoCadastro">
       <div class="container">

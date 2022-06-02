@@ -3,13 +3,26 @@
 :root
 {
     --rosa: #f388aa;
-    --rosaEscuro: #c93966;
+    /* --corLetras: #ffdda9; */
+    --rosaEscuro: #c31c51;
+    --preto: rgb(70, 70, 70);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
 }
 
 /* ----Carrosel boptstrap---- */
 
 .carousel-inner img{
-    max-height: 500px;
+    height: 100% ;
+    max-height: 530px;
 }
 
 /* ----Seção Vantagens---- */
@@ -29,7 +42,6 @@
     flex-direction: column;
     align-items:center;
     margin-top: 20px;
-    min-width: 200px;
 }
 .vantagens i
 {
@@ -58,26 +70,49 @@
     width: 380px;
 }
 
-/* Carrossel de roupas */
+/* Carrossel */
 .carrossel{
     max-width: 1200px;
 }
-
 .tituloSecao
 {
-   
-    color: var(--rosaEscuro);
+    color: var(--preto);
     font-size: 30px;
-    font-style: italic;
-
-    margin-bottom: 30px;
+    margin: 0 10px;
+   
+}
+.tituloSecao a, .tituloSecao a:hover, .tituloSecao a:visited
+{
+    text-decoration: none;
+    color: var(--preto);
 }
 
-figure{
+
+.container-tituloSecao
+{
+    display: flex;
+    align-items: center;
+    max-width: 1180px;
+    margin: 20px auto;
+}
+
+.decoracao2
+{
+    background-color: var(--rosaEscuro);
+    width: 5px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+
+.carrosel figure{
     margin:0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-figure img{
+.carrosel figure img{
     height: 200px;
     width: 235px;
 }
@@ -90,16 +125,17 @@ figure img{
     margin-bottom: 5%;    
 }
 
-figcaption{
-    width: 235px;
+.carrosel figcaption{
+    width: 200px;
+    text-align: center;
 }
-#arrow-prev, #arrow-prev1, #arrow-prev2{
+#arrow-prev1, #arrow-prev2{
     font-size: 40px;
     color: var(--rosa);
     margin-left: 30px;         
 }
   
-#arrow-next , #arrow-next1{
+#arrow-next1{
 
     font-size: 40px;
     color: var(--rosa);    
@@ -121,9 +157,209 @@ figcaption{
     text-align: center;
 }
 
-.secaoAvaliacao
+/* Destaques da semana  */
+
+.tituloPrincipal
+{
+    padding: 10px;    
+    width: 450px;
+    margin:auto;
+
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--preto);
+}
+.decoracao
+{
+    background-color: var(--rosaEscuro);
+    width: 300px;
+    height: 5px;
+    border-radius: 10px;
+    margin: 0 auto 20px auto;
+}
+
+.container-destaque
+{
+    display: flex;
+    justify-content: center;
+    max-height: 500px;
+}
+.container-destaque img 
+{
+    width: 200px;
+    height: 200px;
+    margin-right: 0px;
+}
+
+.container-imagem
+{
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 500px;
+}
+
+.container-imagem figure
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+}
+.container-imagem img
+{
+    width: 100%;
+    height: 100%;
+}
+.container-imagem figcaption
+{
+    width: 100%;
+    background-color: var(--rosaEscuro);
+    color: white;
+    padding: 10px;
+
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.container-imagem figcaption:hover
+{
+    font-size: 18px;
+}
+.container-imagem figcaption i
+{
+    margin-left: 10px;
+}
+
+.container-destaque .container-carrossel
+{
+    max-height: 280px;
+    max-width: 500px;
+}
+
+.container-destaque .slick-list
+{
+    max-height: 300px;
+    max-width:400px ;
+}
+.container-destaque .slick-slide
+{
+    margin-right: 10px;
+}
+
+#arrow-prev
+{
+    color: #c31c51;
+    position: relative;
+    left: 27px;
+    z-index: 1;
+    font-size: 20px;
+}
+#arrow-next
+{
+    color: #c31c51;
+    position: relative;
+    right: 27px;
+    font-size: 20px;
+    z-index: 1;
+}
+
+/* Seção Menu */
+
+.secaoMenu .container
+{   
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-column-gap: 100px;
+    max-width: 1000px;
+}
+.secaoMenu .fundo div
+{
+    cursor: pointer;
+    display: flex;   
+
+    padding-top: 350px;
+    max-width: 400px;
+    max-height: 500px;
+    margin: 30px 10px;
+    box-shadow: 6px 2px 2px rgb(163, 159, 159);
+}
+.secaoMenu .fundo
+{
+    background-color: #f388aa;
+    max-width: 450px;
+    max-height: 400px;
+    margin: 30px 0;
+}
+.roupas
+{
+    background-image: url(../imgs/image2.png);
+    background-repeat: no-repeat;
+}
+
+.acessorios
+{
+    background-image: url(../imgs/image3.png);
+    background-repeat: no-repeat;
+    padding-top: 0 !important;
+    padding-bottom: 350px;
+    max-height: 400px;
+}
+
+.colecoes
+{
+    background-image: url(../imgs/image0.png);
+    background-repeat: no-repeat;
+
+}
+
+.calcados
+{
+    background-image: url(../imgs/image1.png);
+    background-repeat: no-repeat;
+}
+.secaoMenu
+{
+    background-color: whitesmoke;
+}
+
+.secaoMenu h2
+{
+    text-align: center;
+    color: var(--preto);
+    padding-top: 20px;
+}
+.secaoMenu .decoracao
 {
     background-color: var(--rosa);
+}
+.secaoMenu a
+{
+    font-size: 30px;
+    margin-left: 20px;
+    color: var(--preto);
+    text-shadow: 0.05em 0.05em 0.1em rgb(217, 212, 212);
+
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.secaoMenu a:hover
+{
+    font-size: 35px;
+}
+.secaoMenu a:visited, .secaoMenu a:hover
+{
+    text-decoration: none;
+    color: var(--preto);
+}
+
+/* Seção Avaliação */
+
+.secaoAvaliacao
+{
+    background-color: var(--rosaEscuro);
 }
 .avaliacoes-carrossel
 {
@@ -131,7 +367,7 @@ figcaption{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--corLetras);
     padding: 30px 0;
 }
 .avaliacoes-carrossel h2
