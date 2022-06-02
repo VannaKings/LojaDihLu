@@ -126,8 +126,11 @@
 }
 
 .carrosel figcaption{
-    width: 200px;
+    width: 220px;
     text-align: center;
+}
+figcaption{
+    width: 225px;
 }
 #arrow-prev1, #arrow-prev2{
     font-size: 40px;
@@ -138,7 +141,9 @@
 #arrow-next1{
 
     font-size: 40px;
-    color: var(--rosa);    
+    color: var(--rosa);  
+    position: absolute;
+    right: 25px;  
 }
 
 #arrow-prev2 , #arrow-next2{
