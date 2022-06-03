@@ -396,3 +396,46 @@ figcaption{
 {
     float: right;
 }
+
+/* Responsividade para dispositivos móveis */
+
+@media (max-width: 430px){
+
+    /*  banner de vantagens  */
+
+    .vantagens .container{
+        max-width: 100%;
+    }
+    .vantagens .container div{
+        max-width: 33%;
+    }
+    .vantagens p{
+        max-width: 100%;
+    }
+
+    /* seção de destaques */
+
+    .destaques-carrossel{
+        margin-top: 15px;
+    }
+    .destaques-carrossel .container-carrossel{
+        display: none;
+    }
+
+    /* seção de novidades */
+    .novidades-carrossel{
+        display: none;
+    }
+
+    /* seção de menu */
+    .secaoMenu .container{
+        max-width: 100%;
+    }
+    /* .secaoMenu .fundo div{
+        max-width: 200px;
+        max-height: 250px;
+    }
+    .roupas{
+        background-size: 200px 250px;
+    } */
+}
