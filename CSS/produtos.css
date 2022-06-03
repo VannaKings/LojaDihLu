@@ -156,3 +156,32 @@
     font-size: 20px;
     text-decoration: none;
 }
+
+/* Responsividade para dispositivos móveis */
+
+@media (max-width: 430px){
+
+    /* produtos */
+    .conteudo-produtos{
+        max-width: 100%;
+        margin-left: 0px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .conteudo-produtos .produto{
+        max-width: 100px;
+    }
+    .conteudo-produtos .produto img{
+        max-width: 100%;
+        max-height: 90px;
+    }
+    .secaoPrincipal .container {
+        flex-direction: column;
+    }
+    .lista_filtro{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .lista_filtro li{
+        text-align: center;
+    }
+}
