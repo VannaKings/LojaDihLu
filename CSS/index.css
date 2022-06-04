@@ -280,6 +280,14 @@ figcaption{
     grid-column-gap: 100px;
     max-width: 1000px;
 }
+
+.secaoMenu h2 strong
+{
+    color: var(--rosa);
+    font-style: italic;
+    font-family: cursive;
+}
+
 .secaoMenu .fundo div
 {
     cursor: pointer;

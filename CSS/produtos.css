@@ -44,7 +44,7 @@
 {
     display: flex;
     justify-content: center;
-    padding: 40px 10px;
+    padding: 30px 10px 0 10px;
 }
 
 .container-conteudo
@@ -69,7 +69,7 @@
 
 /*  Seção Produtos ---- filtro */
 
-.secaoPrincipal_filtro
+.container-filtro
 {
     max-width: 500px;
     /* box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.15); */
@@ -86,12 +86,12 @@
     font-size: 24px;
 }
 
-.secaoPrincipal_filtro i
+.container-filtro i
 {
     color: var(--rosaEscuro);
     font-size: 24px;
 }
-.secaoPrincipal_filtro p
+.container-filtro p
 {
     padding: 20px 0;
     width: 100%;
@@ -100,24 +100,24 @@
     margin-bottom: 20px
 }
 
-.secaoPrincipal_filtro strong
+.container-filtro strong
 {
     font-weight: bold;
 }
 
-.secaoPrincipal_filtro ul
+.container-filtro ul
 {
     list-style: none;
     padding: 20px 0;
 }
-.secaoPrincipal_filtro li
+.container-filtro li
 {
     margin-bottom: 20px;
     cursor: pointer;
 }
 /*  Seção Roupas ---- conteudo */
 
-.conteudo-produtos 
+.container-produtos 
 {
     margin-left: 50px;
     display: grid;
@@ -139,16 +139,21 @@
     padding-top: 10px;
     text-align: center;
     margin-bottom: 10px;
+
+   
 }
 .produto strong
 {
+    border-top: 2px solid var(--rosa);
+    padding-top: 15px;
     font-weight: bold;
     color: black;
 }
 .produto img
 {
+
     width: 180px;
-    height: 180px;
+    height: 230px;
 }
 .produto .preco
 {
@@ -162,15 +167,15 @@
 @media (max-width: 430px){
 
     /* produtos */
-    .conteudo-produtos{
+    .container-produtos{
         max-width: 100%;
         margin-left: 0px;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .conteudo-produtos .produto{
+    .container-produtos .produto{
         max-width: 100px;
     }
-    .conteudo-produtos .produto img{
+    .container-produtos .produto img{
         max-width: 100%;
         max-height: 90px;
     }
