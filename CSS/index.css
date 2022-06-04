@@ -61,8 +61,8 @@
 
 .promocoes .container
 {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 .promocoes img
 {
@@ -70,10 +70,39 @@
     width: 380px;
 }
 
-/* Carrossel */
+/* Carrossel geral */
+
 .carrossel{
-    max-width: 1200px;
+    max-width: 100%;
+    height: 100%;
 }
+
+.container-carrossel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+
+    position: relative;
+    margin: 0 20px;
+}
+
+.carrossel .slick-list
+{
+    height: 100%;
+    max-width: 100%;
+}
+
+/* .carrosel .slick-slide
+{
+    height: 100%;
+} */
+
+.slick-slide img
+{
+    display: initial !important;
+}
+
 .tituloSecao
 {
     color: var(--preto);
@@ -87,109 +116,75 @@
     color: var(--preto);
 }
 
-
-.container-tituloSecao
-{
-    display: flex;
-    align-items: center;
-    max-width: 1180px;
-    margin: 20px auto;
-}
-
-.decoracao2
-{
-    background-color: var(--rosaEscuro);
-    width: 5px;
-    height: 30px;
-    border-radius: 5px;
-}
-
-
-.carrosel figure{
-    margin:0 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.carrosel figure img{
-    height: 200px;
-    width: 235px;
-}
 .arrow {
-    margin: 0 10px;
-    width: 50px;
+    
+    width: 10%;
     height: 50px;
     cursor: pointer;
     vertical-align: middle;
     margin-bottom: 5%;    
 }
 
-.carrosel figcaption{
-    width: 220px;
-    text-align: center;
-}
-figcaption{
-    width: 225px;
-}
 #arrow-prev1, #arrow-prev2{
-    font-size: 40px;
+    font-size: 30px;
     color: var(--rosa);
-    margin-left: 30px;         
+
+    position: absolute;
+    left: -4%;
+    z-index: 1; 
 }
   
-#arrow-next1{
-
-    font-size: 40px;
-    color: var(--rosa);  
+#arrow-next1, #arrow-next2{
     position: absolute;
-    right: 25px;  
+    right: -4%;
+    z-index: 1; 
+
+    font-size: 30px;
+    color: var(--rosa);  
 }
 
-#arrow-prev2 , #arrow-next2{
-    font-size: 40px;
-    color: white;
-} 
-
-.container-carrossel{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
-}
-.destaques-carrossel, .novidades-carrossel,.avaliacoes-carrossel{
-    margin-top: 50px;
+.destaques-carrossel, .novidades-carrossel{
+    padding-top: 20px;
     text-align: center;
 }
 
 /* Destaques da semana  */
 
+.container-titulo
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
 .tituloPrincipal
 {
-    padding: 10px;    
-    width: 450px;
-    margin:auto;
-
+    padding-top: 20px;
     font-size: 30px;
     text-align: center;
-    text-transform: uppercase;
     color: var(--preto);
 }
-.decoracao
+.tituloPrincipal strong
 {
-    background-color: var(--rosaEscuro);
-    width: 300px;
-    height: 5px;
-    border-radius: 10px;
-    margin: 0 auto 20px auto;
+    color: var(--rosaEscuro);
+    font-style: italic;
+}
+.container-titulo i
+{
+    color: var(--rosaEscuro);
+    margin: 0 1%;
+    font-size: 18px;
 }
 
 .container-destaque
 {
     display: flex;
     justify-content: center;
-    max-height: 500px;
+    max-height: 700px;
 }
+
 .container-destaque img 
 {
     width: 200px;
@@ -240,54 +235,109 @@ figcaption{
 
 .container-destaque .container-carrossel
 {
-    max-height: 280px;
     max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.container-carrossel .produtos
+{
+    height: 100%;
+}
 .container-destaque .slick-list
 {
-    max-height: 300px;
-    max-width:400px ;
+    height: 100%;
+    max-width:400px;
 }
+
 .container-destaque .slick-slide
 {
-    margin-right: 10px;
+    margin: 0 !important;
+    height: 100%;
 }
 
 #arrow-prev
 {
-    color: #c31c51;
-    position: relative;
-    left: 27px;
+    color: var(--rosaEscuro);
+    font-size: 25px;
+    
+    position: absolute;
     z-index: 1;
-    font-size: 20px;
+    left:-6%;
 }
 #arrow-next
 {
-    color: #c31c51;
-    position: relative;
-    right: 27px;
-    font-size: 20px;
+    position: absolute;
     z-index: 1;
+    right: -6%;
+
+    color: var(--rosaEscuro);
+    font-size: 25px;
 }
 
-/* Seção Menu */
+/*---- Novidades ----*/
 
-.secaoMenu .container
-{   
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-column-gap: 100px;
+.container-tituloSecao
+{
+    display: flex;
+    align-items: center;
+    max-width: 1050px;
+    margin: 20px auto;
+}
+
+.decoracao2
+{
+    background-color: var(--rosaEscuro);
+    width: 5px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+/* Seção banner */
+
+.secao-banner .container
+{
+    display: flex;
+    justify-content: center;  
+}
+.secao-banner img
+{
+    width: 100%;
     max-width: 1000px;
 }
 
-.secaoMenu h2 strong
+/* Seção Menu */
+.secaoMenu .container
+{
+    padding: 30px 10px;
+}
+.secaoMenu .container-categoria
+{   
+    display: grid; 
+    grid-template-columns: 0.7fr 0.7fr; 
+    grid-column-gap: 5%;
+    max-width: 1000px;
+    margin: auto;
+}
+.container-titulo-categorias
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.container-titulo-categorias h2 strong
 {
     color: var(--rosa);
     font-style: italic;
-    font-family: cursive;
 }
-
+.container-titulo-categorias i
+{
+    font-size: 16px;
+    color: var(--rosa);
+    margin: 0 1%;
+}
 .secaoMenu .fundo div
 {
     cursor: pointer;
@@ -297,7 +347,7 @@ figcaption{
     max-width: 400px;
     max-height: 500px;
     margin: 30px 10px;
-    box-shadow: 6px 2px 2px rgb(163, 159, 159);
+    box-shadow: 0.3em 0.2em 0.2em rgb(163, 159, 159);
 }
 .secaoMenu .fundo
 {
@@ -310,6 +360,9 @@ figcaption{
 {
     background-image: url(../imgs/image2.png);
     background-repeat: no-repeat;
+    padding-top: 0 !important;
+    padding-bottom: 350px;
+    max-height: 400px;
 }
 
 .acessorios
@@ -368,42 +421,6 @@ figcaption{
     color: var(--preto);
 }
 
-/* Seção Avaliação */
-
-.secaoAvaliacao
-{
-    background-color: var(--rosaEscuro);
-}
-.avaliacoes-carrossel
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--corLetras);
-    padding: 30px 0;
-}
-.avaliacoes-carrossel h2
-{
-    color: white;
-    margin-bottom: 50px;
-    font-size: 24px;
-}
-
-.avaliacoes-carrossel .carrossel div
-{
-    margin:0 20px;   
-    max-width: 1fr;
-}
-.avaliacoes-carrossel p
-{
-    font-style: italic;
-    color: white;
-}
-.avaliacoes-carrossel .nomeCliente
-{
-    float: right;
-}
 
 /* Responsividade para dispositivos móveis */
 
@@ -423,22 +440,24 @@ figcaption{
 
     /* seção de destaques */
 
+    .container-destaque
+    {
+        flex-direction: column;
+    }
     .destaques-carrossel{
         margin-top: 15px;
     }
-    .destaques-carrossel .container-carrossel{
-        display: none;
-    }
 
     /* seção de novidades */
-    .novidades-carrossel{
+    /* .novidades-carrossel{
         display: none;
-    }
+    } */
 
     /* seção de menu */
-    .secaoMenu .container{
-        max-width: 100%;
+    .secaoMenu .container-categoria{
+        grid-template-columns: 1fr;
     }
+
     /* .secaoMenu .fundo div{
         max-width: 200px;
         max-height: 250px;

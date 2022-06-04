@@ -93,7 +93,7 @@ header .container
 
 .newsletter
 {
-    margin: 50px 0;
+    padding: 30px;
 }
 .newsletter .container
 {
@@ -200,6 +200,7 @@ footer .container
     border-right: 1px solid var(--rosa);
     padding: 30px; 
     max-width:300px;    
+    margin-right: 20px;
 }
 
 .contato p
@@ -240,15 +241,16 @@ footer .container
     font-weight: bold;
     font-size: 20px;
 }
+
 .pagamento img
 {
-    height: 100px;
-    margin: 10px;    
+    max-height: 180px;
+    max-width: 300px; 
 }
 .pagamento #logoPix
 {
-    width: 200px;
-    height: 70px;
+    max-width: 150px;
+    max-height: 50px;
 }
 
 /* Responsividade para dispositivos móveis */

@@ -20,6 +20,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/produtos.css">
 
     <!--Icones font awesome-->
     <script src="https://kit.fontawesome.com/0169495cc4.js" crossorigin="anonymous"></script>
@@ -40,33 +41,35 @@
     <div id="header"></div>
     <main>
       <section class="carroselBanner">
-        <!-- Carrosel -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="imgs/banner.gif" class="d-block w-100" alt="...">
+        <div class="container-bootstrap">
+          <!-- Carrosel -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-item">
-              <img src="imgs/banner2.png" class="d-block w-100" alt="...">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imgs/banner.gif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/banner2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/bannerFrete.png" class="d-block w-100" alt="...">
+              </div>
             </div>
-            <div class="carousel-item">
-              <img src="imgs/bannerFrete.png" class="d-block w-100" alt="...">
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-          </div>
+        </div>
       </section>
       <section class="vantagens">
         <div class="container">
@@ -88,139 +91,170 @@
       <section>     
         <!-- Carrosel -->
         <div class="destaques-carrossel">
-          <div class="container-titulo">
-                  
-            <h2 class="tituloPrincipal">
-              <!-- <i class="fa-solid fa-ranking-star"></i>  -->
-              Destaque da semana 
-            </h2> 
-            <div class="decoracao"></div>
-          </div>
 
-          <div class="container-destaque">
-            
-            <div class="container-imagem">
-              <figure class="destaque-imagem">
-                <img src="imgs/destaqueAmor.png" class="imagemPromocional">
-                <figcaption> <strong>50% OFF </strong> para presentear seu amor!<i class="fa-solid fa-heart"></i></figcaption>
-              </figure>
+          <div class="container">
+
+            <div class="container-titulo">
+              <i class="fa-solid fa-heart"></i>
+              <h2 class="tituloPrincipal">
+                Destaque da <strong> semana </strong> 
+              </h2> 
+              <i class="fa-solid fa-heart"></i>
             </div>
 
-            <div class="container-carrossel">
-              <div id="arrow-prev" class="arrow"><i class="fa-solid fa-chevron-left"></i></div>
-              <div class="carrossel destaque responsive">
-                  <figure><img src="imgs/Vestidos/vestido-acinturado-floral.JPG" alt=""><figcaption><p>Roupinha 1</p>R$: XX,XX</figcaption></figure>
-                  <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 2</p>R$: XX,XX</figcaption></figure>
-                  <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 3</p>R$: XX,XX</figcaption></figure>
-                  <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 4</p>R$: XX,XX</figcaption></figure>
-                  <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 5</p>R$: XX,XX</figcaption></figure>
-                  <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 6</p>R$: XX,XX</figcaption></figure>
-                  <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 7</p>R$: XX,XX</figcaption></figure>
-                  <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 8</p>R$: XX,XX</figcaption></figure>            
+            <div class="container-destaque">
+              
+              <div class="container-imagem">
+                <figure class="destaque-imagem">
+                  <img src="imgs/destaqueAmor.png" class="imagemPromocional">
+                  <figcaption> <strong>50% OFF </strong> para presentear seu amor!<i class="fa-solid fa-heart"></i></figcaption>
+                </figure>
               </div>
-              <div id="arrow-next" class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
-            </div>
 
+              <div class="container-carrossel">
+                <div id="arrow-prev" class="arrow"><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="carrossel destaque responsive">
+                    <div class="produto">
+                      <img src="imgs/Saias/saia-couro.png" alt="conjunto">
+                      <p class="nome">Saia de Couro Síntetico  Moda Verão 2022</p>
+                      <strong> R$ 89,90 à vista</strong>
+                      <p class="preco">3x R$ 29,97</p>
+                    </div>
+                    <div class="produto">
+                      <img src="imgs/Vestidos/vestido-macaquinho.png" alt="sobretudo">
+                      <p class="nome">Vestido Macaquinho Acinturado</p>
+                      <strong> R$ 129,90 à vista</strong>
+                      <p class="preco">6x R$ 25,98</p>
+                    </div>
+                    <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 2</p>R$: XX,XX</figcaption></figure>
+                    <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 3</p>R$: XX,XX</figcaption></figure>
+                    <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 4</p>R$: XX,XX</figcaption></figure>
+                    <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 5</p>R$: XX,XX</figcaption></figure>
+                    <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 6</p>R$: XX,XX</figcaption></figure>
+                    <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 7</p>R$: XX,XX</figcaption></figure>
+                    <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 8</p>R$: XX,XX</figcaption></figure>            
+                </div>
+                <div id="arrow-next" class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+              </div>
+
+            </div>
           </div>
         </div>
-
       </section>
       <!-- Carrosel novidades -->
       <section>      
         <div class="novidades-carrossel">
+          <div class="container">
+            <div class="container-tituloSecao">
+              <div class="decoracao2"></div>
+              <h3 class="tituloSecao">
+                <a href="novidades.html">Novidades</a>
+              </h3>          
+            </div>  
 
-          <div class="container-tituloSecao">
-            <div class="decoracao2"></div>
-            <h3 class="tituloSecao">
-              <a href="novidades.html">Novidades</a>
-            </h3>          
-          </div>  
-
-          <div class="container-carrossel">
-            <div id="arrow-prev1" class="arrow"><i class="fa-solid fa-chevron-left"></i></div>
-            <div class="carrossel novidade responsive">
-                <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 1</p>R$: XX,XX</figcaption></figure>
-                <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 2</p>R$: XX,XX</figcaption></figure>
-                <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 3</p>R$: XX,XX</figcaption></figure>
-                <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 4</p>R$: XX,XX</figcaption></figure>
-                <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 5</p>R$: XX,XX</figcaption></figure>
-                <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 6</p>R$: XX,XX</figcaption></figure>
-                <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 7</p>R$: XX,XX</figcaption></figure>
-                <figure><img src="imgs/placeholder.png" alt=""><figcaption><p>Roupinha 8</p>R$: XX,XX</figcaption></figure>            
+            <div class="container-carrossel">
+              <div id="arrow-prev1" class="arrow"><i class="fa-solid fa-chevron-left"></i></div>
+              <div class="carrossel novidade responsive">
+                <div class="produto">
+                  <img src="imgs/Saias/saia-xadrez.png" alt="">
+                  <p class="nome"> Saia Xadrez - Moda Colegial</p>
+                  <strong> R$ 74,90 à vista</strong>
+                  <p class="preco">3x R$ 24,97</p>
+                </div>
+                <div class="produto">
+                  <img src="imgs/Saias/saia-xadrez.png" alt="">
+                  <p class="nome"> Saia Xadrez - Moda Colegial</p>
+                  <strong> R$ 74,90 à vista</strong>
+                  <p class="preco">3x R$ 24,97</p>
+                </div>   
+                <div class="produto">
+                  <img src="imgs/Saias/saia-xadrez.png" alt="">
+                  <p class="nome"> Saia Xadrez - Moda Colegial</p>
+                  <strong> R$ 74,90 à vista</strong>
+                  <p class="preco">3x R$ 24,97</p>
+                </div>
+                <div class="produto">
+                  <img src="imgs/Saias/saia-xadrez.png" alt="">
+                  <p class="nome"> Saia Xadrez - Moda Colegial</p>
+                  <strong> R$ 74,90 à vista</strong>
+                  <p class="preco">3x R$ 24,97</p>
+                </div>
+                <div class="produto">
+                  <img src="imgs/Saias/saia-xadrez.png" alt="">
+                  <p class="nome"> Saia Xadrez - Moda Colegial</p>
+                  <strong> R$ 74,90 à vista</strong>
+                  <p class="preco">3x R$ 24,97</p>
+                </div> 
+                <div class="produto">
+                  <img src="imgs/Saias/saia-xadrez.png" alt="">
+                  <p class="nome"> Saia Xadrez - Moda Colegial</p>
+                  <strong> R$ 74,90 à vista</strong>
+                  <p class="preco">3x R$ 24,97</p>
+                </div>  
+                <div class="produto">
+                  <img src="imgs/Saias/saia-xadrez.png" alt="">
+                  <p class="nome"> Saia Xadrez - Moda Colegial</p>
+                  <strong> R$ 74,90 à vista</strong>
+                  <p class="preco">3x R$ 24,97</p>
+                </div>        
+              </div>
+              <div id="arrow-next1" class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
             </div>
-            <div id="arrow-next1" class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
           </div>
         </div>
 
       </section>
 
-      <section class="secaoMenu">
-
-        <h2> Compre por <strong>categoria</strong></h2>
-        <div class="decoracao"></div>
+      <section class="secao-banner">
 
         <div class="container">
 
-          <div class="fundo">
-            <div class="roupas">
-              <a href="roupas.html">Roupas</a>
-            </div>
+          <div class="banner">
+            <img src="imgs/frete-gratis.gif">
           </div>
-          <div class="fundo">
-            <div class="acessorios">
-              <a href="acessorios.html">Acessórios</a>
-            </div>
+
+        </div>
+
+      </section>  
+
+      <section class="secaoMenu">
+
+        <div class="container">
+
+          <div class="container-titulo-categorias">
+            <i class="fa-solid fa-heart"></i>
+            <h2> Compre por <strong>categoria</strong></h2>
+            <i class="fa-solid fa-heart"></i>
           </div>
-          <div class="fundo">
-            <div class="colecoes">
-              <a href="colecoes.html">Coleções</a> 
+          
+          <div class="container-categoria">
+
+            <div class="fundo">
+              <div class="roupas">
+                <a href="roupas.html">Roupas</a>
+              </div>
             </div>
-          </div>
-          <div class="fundo">
-            <div class="calcados">
-              <a href="calcados.html">Calçados</a>
+            <div class="fundo">
+              <div class="acessorios">
+                <a href="acessorios.html">Acessórios</a>
+              </div>
             </div>
+            <div class="fundo">
+              <div class="colecoes">
+                <a href="colecoes.html">Coleções</a> 
+              </div>
+            </div>
+            <div class="fundo">
+              <div class="calcados">
+                <a href="calcados.html">Calçados</a>
+              </div>
+            </div>
+
           </div>
+          
         </div>
 
       </section>
-
-      <!-- Carrosel avaliações -->
-      <section class="secaoAvaliacao">
-        <div class="avaliacoes-carrossel">
-          
-          <h2 class="tituloSecao">
-            A satisfação de nossas clientes <i class="fa-solid fa-heart"></i>
-          </h2> 
-          
-          <div class="container-carrossel">
-            <div id="arrow-prev2" class="arrow"><i class="fa-solid fa-chevron-left"></i></div>
-            <div class="carrossel avaliacao responsive">
-                <div>
-                  <p> "Comprei na Dih e nunca me arrependi, looks incríveis e muito amor no atendimento."</p>
-                  <p class="nomeCliente">Noely Santos</p>
-                </div>
-                <div>
-                  <p>"As roupas são incríveis!! vestem super bem e valorizam meu corpo, fora os produtinhos cósmeticos que são muito bons. Amei!!"</p>
-                  <p class="nomeCliente">Samantha Oliveira</p>
-                </div>
-                <div>
-                  <p>"Recomendo muito!! já virou minha loja favorita, tantas opções lindas e fiquei satisfeita desde a primeira compra."</p>
-                  <p class="nomeCliente">Sabrina Kellyne</p>
-                </div>
-                <div>
-                  <p>"Simplesmente apaixonada por essa loja, produtinhos maravilhosos e roupas super estilosas, comprarei muito aqui ainda."</p>
-                  <p class="nomeCliente">Marisa Mattos</p>
-                </div>
-                <div>
-                  <p>"Despois que comecei a comprar aqui meu astral até subiu, muita gentileza e amor em cada atendimento, além de produtos e roupas muito top!!"</p>
-                  <p class="nomeCliente">Claudia Cristina </p>
-                </div>          
-            </div>
-            <div id="arrow-next2" class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
-          </div>
-        </div>
-      </section>      
       
       <!-- Seção Cadastro -->
       <section class="newsletter">

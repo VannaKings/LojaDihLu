@@ -17,20 +17,30 @@
 }
 /* Seção roupas ---- Cabeçalho */
 
-.secaoCabecalho
+.secao-cabecalho
 {
     background-color: var(--rosaEscuro);
     height: 100px;
 }
 
-.secaoCabecalho .container
+.secao-cabecalho .container
 {
     display: flex;
     height: 100%;
     align-items: center;
     justify-content: center;
 }
-.secaoCabecalho_titulo p
+.container-titulo-produtos
+{
+    display: flex;
+
+}
+.container-titulo-produtos i
+{
+    color: white;
+    margin: 0 5%;
+}
+.container-titulo-produtos h1
 {
     color: white;
     font-size: 34px;
@@ -138,22 +148,22 @@
 {
     padding-top: 10px;
     text-align: center;
-    margin-bottom: 10px;
-
-   
+    margin-bottom: 10px;  
 }
+
 .produto strong
 {
     border-top: 2px solid var(--rosa);
-    padding-top: 15px;
+    padding-top: 4%;
     font-weight: bold;
     color: black;
 }
 .produto img
 {
-
     width: 180px;
     height: 230px;
+    object-fit: cover;
+    border-radius: 10%;
 }
 .produto .preco
 {
