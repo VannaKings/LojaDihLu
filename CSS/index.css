@@ -424,6 +424,15 @@
 
 /* Responsividade para dispositivos móveis */
 
+@media(max-width: 770px){
+     /* Destaques */
+
+     .container-destaque{
+         display: grid;
+     }
+     
+}
+
 @media (max-width: 430px){
 
     /*  banner de vantagens  */
