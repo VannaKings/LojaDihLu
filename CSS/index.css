@@ -315,8 +315,8 @@
 .secaoMenu .container-categoria
 {   
     display: grid; 
-    grid-template-columns: 0.7fr 0.7fr; 
-    grid-column-gap: 5%;
+    grid-template-columns: 1fr 1fr; 
+    grid-column-gap: 10%;
     max-width: 1000px;
     margin: auto;
 }
