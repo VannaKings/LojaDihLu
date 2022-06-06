@@ -363,6 +363,11 @@
     padding-top: 0 !important;
     padding-bottom: 350px;
     max-height: 400px;
+    transition: all .8s;
+}
+.roupas:hover, .acessorios:hover, .colecoes:hover,.calcados:hover{
+    transform: scale(1.1);
+    
 }
 
 .acessorios
@@ -372,19 +377,21 @@
     padding-top: 0 !important;
     padding-bottom: 350px;
     max-height: 400px;
+    transition: all .8s;
 }
 
 .colecoes
 {
     background-image: url(../imgs/image0.png);
     background-repeat: no-repeat;
-
+    transition: all .8s;
 }
 
 .calcados
 {
     background-image: url(../imgs/image1.png);
     background-repeat: no-repeat;
+    transition: all .8s;
 }
 .secaoMenu
 {
@@ -411,10 +418,10 @@
     text-transform: uppercase;
     text-decoration: none;
 }
-.secaoMenu a:hover
+/* .secaoMenu a:hover
 {
     font-size: 35px;
-}
+} */
 .secaoMenu a:visited, .secaoMenu a:hover
 {
     text-decoration: none;
@@ -458,20 +465,9 @@
     }
 
     /* seção de novidades */
-    /* .novidades-carrossel{
-        display: none;
-    } */
 
-    /* seção de menu */
     .secaoMenu .container-categoria{
         grid-template-columns: 1fr;
     }
 
-    /* .secaoMenu .fundo div{
-        max-width: 200px;
-        max-height: 250px;
-    }
-    .roupas{
-        background-size: 200px 250px;
-    } */
 }
