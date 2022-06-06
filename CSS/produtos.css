@@ -1,7 +1,6 @@
 :root
 {
     --rosa: #f388aa;
-    /* --rosaEscuro: #9c2148; */
     --rosaEscuro: #c31c51;
     --preto: rgb(70, 70, 70);
 }
@@ -15,6 +14,7 @@
     vertical-align: baseline;
     box-sizing: border-box;
 }
+
 /* Seção roupas ---- Cabeçalho */
 
 .secao-cabecalho
@@ -30,16 +30,18 @@
     align-items: center;
     justify-content: center;
 }
+
 .container-titulo-produtos
 {
     display: flex;
-
 }
+
 .container-titulo-produtos i
 {
     color: white;
     margin: 0 5%;
 }
+
 .container-titulo-produtos h1
 {
     color: white;
@@ -67,10 +69,12 @@
     justify-content: center;
     margin: 10px 0 50px 0;
 }
+
 .page-link
 {
     color: var(--rosaEscuro);
 }
+
 .page-link:hover
 {
     color: white;
@@ -82,11 +86,12 @@
 .container-filtro
 {
     max-width: 500px;
-    /* box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.15); */
 }
+
 .container-filtro i{
     margin-right: 5px;
 }
+
 .titulo_filtro
 {
     display: flex;
@@ -104,6 +109,7 @@
     color: var(--rosaEscuro);
     font-size: 24px;
 }
+
 .container-filtro p
 {
     padding: 20px 0;
@@ -128,6 +134,7 @@
     margin-bottom: 20px;
     cursor: pointer;
 }
+
 /*  Seção Roupas ---- conteudo */
 
 .container-produtos 
@@ -161,6 +168,7 @@
     font-weight: bold;
     color: black;
 }
+
 .produto img
 {
     width: 180px;
@@ -168,6 +176,7 @@
     object-fit: cover;
     border-radius: 10%;
 }
+
 .produto .preco
 {
     color: var(--rosaEscuro);
@@ -176,6 +185,7 @@
 }
 
 /* Responsividade para dispositivos móveis */
+
 @media(max-width: 770px){
     .container-produtos{
         max-width: 100%;
@@ -207,7 +217,8 @@
         font-size: 16px;
     }
 }
-@media (max-width: 430px){
+
+@media (max-width: 450px){
 
     /* produtos */
     .container-filtro span, .container-filtro i, .container-filtro p {
@@ -222,9 +233,7 @@
     }
     
     .lista_filtro{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        
-    }
-    
+        grid-template-columns: 1fr 1fr 1fr 1fr;        
+    }    
 
 }

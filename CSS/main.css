@@ -3,8 +3,6 @@
 :root
 {
     --rosa: #f388aa;
-    /* --rosaEscuro: #9c2148; */
-    /* --rosaEscuro: #c93966; */
     --rosaEscuro: #c31c51;
     --preto: rgb(70, 70, 70);
 }
@@ -23,10 +21,12 @@ body
 {
     font-family: 'Montserrat', sans-serif;    
 }
+
 p
 {
     color:var(--preto) ;
 }
+
 .container
 {
     margin: auto;
@@ -299,6 +299,7 @@ footer .container
     }
 
     /* Newsletter */
+
     .container .newsletter{
         padding: 30px 10px;
     }
@@ -347,7 +348,6 @@ footer .container
         padding-top: 15px;
         padding-bottom: 20px;
     }
-    
     .contato p{
         font-size: 14px;
         line-height: 30px;
