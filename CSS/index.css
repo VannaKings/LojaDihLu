@@ -294,6 +294,11 @@
     border-radius: 5px;
 }
 
+.container-carrossel p
+{
+   padding: 5px 0;
+}
+
 /* Seção banner */
 
 .secao-banner .container
@@ -305,6 +310,13 @@
 {
     width: 100%;
     max-width: 1000px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.secao-banner img:hover
+{
+    transform: scale(1.1);
 }
 
 /* Seção Menu */
@@ -363,7 +375,7 @@
     padding-top: 0 !important;
     padding-bottom: 350px;
     max-height: 400px;
-    transition: all .8s;
+    transition: all .3s;
 }
 .roupas:hover, .acessorios:hover, .colecoes:hover,.calcados:hover{
     transform: scale(1.1);
@@ -377,21 +389,21 @@
     padding-top: 0 !important;
     padding-bottom: 350px;
     max-height: 400px;
-    transition: all .8s;
+    transition: all .3s;
 }
 
 .colecoes
 {
     background-image: url(../imgs/image0.png);
     background-repeat: no-repeat;
-    transition: all .8s;
+    transition: all .3s;
 }
 
 .calcados
 {
     background-image: url(../imgs/image1.png);
     background-repeat: no-repeat;
-    transition: all .8s;
+    transition: all .3s;
 }
 .secaoMenu
 {
