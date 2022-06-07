@@ -186,10 +186,9 @@
 
 /* Responsividade para dispositivos móveis */
 
-@media(max-width: 770px){
+@media(max-width: 950px){
     .container-produtos{
         max-width: 100%;
-        margin-left: 0px;
         grid-template-columns: 1fr 1fr 1fr;
     }
     .container-filtro{
@@ -218,7 +217,7 @@
     }
 }
 
-@media (max-width: 450px){
+@media (max-width: 500px){
 
     /* produtos */
     .container-filtro span, .container-filtro i, .container-filtro p {
@@ -235,5 +234,4 @@
     .lista_filtro{
         grid-template-columns: 1fr 1fr 1fr 1fr;        
     }    
-
 }

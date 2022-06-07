@@ -254,7 +254,7 @@ footer .container
 }
 
 /* Responsividade para dispositivos móveis */
-@media(max-width: 770px){
+@media(max-width: 900px){
     /* header */
     .cabecalho{
         justify-content: space-around;
@@ -269,7 +269,7 @@ footer .container
 }
 
 
-@media (max-width: 430px){
+@media (max-width: 800px){
 
     /* cabecalho */
 
@@ -294,9 +294,12 @@ footer .container
         padding: 10px 0;
         margin-right: 30px;
     }
-    .opcoes{
+    .opcoes
+    {
         display: none;
     }
+}
+@media (max-width: 720px){
 
     /* Newsletter */
 
@@ -320,7 +323,9 @@ footer .container
     .cadastro > *{
         margin: 15px 0;
     }
+}
 
+@media (max-width: 570px){
     /* footer */
 
     .redesSociais{

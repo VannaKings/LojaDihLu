@@ -463,10 +463,17 @@
      .container-destaque{
          display: grid;
      }
-     
+
+     /* seção de categorias */
+
+    .secaoMenu .container-categoria{
+        grid-template-columns: .7fr;
+        justify-content: center;
+        align-items: center;
+     }     
 }
 
-@media (max-width: 430px){
+@media (max-width: 600px){
 
     /*  banner de vantagens  */
 
@@ -477,7 +484,12 @@
         max-width: 33%;
     }
     .vantagens p{
-        max-width: 100%;
+        max-width: 90%;
+        font-size: 10px;
+    }
+    .vantagens i
+    {
+        font-size: 24px;
     }
 
     /* seção de destaques */
@@ -489,11 +501,4 @@
     .destaques-carrossel{
         margin-top: 15px;
     }
-
-    /* seção de novidades */
-
-    .secaoMenu .container-categoria{
-        grid-template-columns: 1fr;
-    }
-
 }
