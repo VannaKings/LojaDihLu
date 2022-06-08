@@ -76,6 +76,15 @@
     height: 100%;
 }
 
+.container-carrossel .produto p strong
+{
+    border-top: 2px solid var(--rosa);
+    font-weight: bold;
+    color: black;
+    padding-top: 8px;
+    margin: 0;
+}
+
 .container-carrossel{
     display: flex;
     justify-content: center;
@@ -279,6 +288,10 @@
 
 /*---- Novidades ----*/
 
+.novidades-carrossel .container-carrossel
+{
+    margin: 10px 0;
+}
 .container-tituloSecao
 {
     display: flex;
@@ -293,11 +306,6 @@
     width: 5px;
     height: 30px;
     border-radius: 5px;
-}
-
-.container-carrossel p
-{
-   padding: 5px 0;
 }
 
 /* Seção banner */
