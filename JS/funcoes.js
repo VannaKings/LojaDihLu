@@ -3,8 +3,8 @@ $('.destaque').slick({
     speed: 300,
     slidesToShow: 2,
     slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 4500,
     prevArrow: $("#arrow-prev"),
     nextArrow: $("#arrow-next"),
     responsive: [
@@ -39,8 +39,8 @@ $('.destaque').slick({
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 4500,
     prevArrow: $("#arrow-prev1"),
     nextArrow: $("#arrow-next1"),
     responsive: [
@@ -70,3 +70,5 @@ $('.destaque').slick({
       // instead of a settings object
     ]
   });
+
+ 
