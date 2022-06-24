@@ -46,43 +46,29 @@ header .container
 .cabecalho
 {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;    
-    height: 104px;
-}
-
-.cabecalho .logo
-{
-    margin-left: 350px;
 }
 
 .logo img 
 {    
     height: 100px;    
 }
-.opcoes a
-{
-    padding: 10px;
-}
-.opcoes img
-{    
-    width: 30px;
-}
 
-.menu 
+.cabecalho nav
 {
     display: flex;
     justify-content: center;
     padding: 10px;
 }
-.menu a
+
+.cabecalho nav a
 {
     text-decoration: none;
     margin-right: 40px;
     color: var(--rosaEscuro);
-}
-.menu-opcoes a{
-    transition:  color .1s;   
+    transition:  color .1s;  
 }
 
 .menu-opcoes a:hover{
@@ -101,12 +87,14 @@ header .container
     padding: 30px;
     max-width: 1000px;
 }
+
 .container-conteudo-newsletter
 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .container-conteudo-newsletter .descricao
 {
     display: flex;
@@ -256,18 +244,11 @@ footer .container
 /* Responsividade para dispositivos móveis */
 @media(max-width: 900px){
     /* header */
-    .cabecalho{
-        justify-content: space-around;
-    }
-    .cabecalho .logo{
-        margin-left: 30%;
-    }
     .menu a{
         margin-right: 15px;
         padding: 5px;
     }
 }
-
 
 @media (max-width: 800px){
 
@@ -281,11 +262,7 @@ footer .container
         max-width: 100%;
         
     }
-    .cabecalho .logo{
-        margin-left: 0;
-        margin: 0 auto;
-    }
-    .menu-opcoes{
+    .cabecalho .menu-opcoes{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         text-align: center;
@@ -293,10 +270,6 @@ footer .container
     .menu-opcoes a{
         padding: 10px 0;
         margin-right: 30px;
-    }
-    .opcoes
-    {
-        display: none;
     }
 }
 @media (max-width: 720px){

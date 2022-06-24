@@ -12,10 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
 
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/main.css">   
     <link rel="stylesheet" href="CSS/produtos.css">    
@@ -50,137 +46,102 @@
                         <strong>FILTROS</strong>
                     </div>
                     <p>Categorias</p>
-                    <span><strong>Coleções</strong></span>
-                    <ul class="lista_filtro">
-                        <li>Inverno</li>
-                        <li>Verão</li>
-                        <li>Primavera</li>                        
-                        <li>Outono</li>
-                    </ul>
+                    <div class="filter-box">
+                        <a href="#" class="btn active" data-filter="todos">Todos</a>
+                        <a href="#" class="btn " data-filter="inverno">Inverno</a>
+                        <a href="#" class="btn " data-filter="verao">Verão</a>
+                        <a href="#" class="btn " data-filter="primavera">Primavera</a>
+                        <a href="#" class="btn " data-filter="outono">Outono</a>
+                        <a href="#" class="btn " data-filter="namorado">Namorados</a>
+                    </div>
                 </div>
                 <div class="container-nav-produtos">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">4</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                        </ul>
-                    </nav>
                     <div class="container-produtos">
-                        <div class="produto">
+                        <div class="produto namorado">
                             <img src="imgs/Conjuntos/macaquinho-rebeca-namorados.PNG" alt="macacão">
                             <p class="nome">Macacão Rebeca Coleção Namorados</p>
                             <p><strong> R$ 149,90 à vista</strong></p>
                             <p class="preco">6x R$ 24,98</p>
                         </div>
-                        <div class="produto">
+                        <div class="produto namorado">
                             <img src="imgs/Conjuntos/macacao-romana-namorados.PNG" alt="macacão">
                             <p class="nome">Macacão Romana Coleção Namorados</p>
                             <p><strong> R$ 159,90 à vista</strong></p>
                             <p class="preco">6x R$ 26,65</p>
                         </div>
-                        <div class="produto">
+                        <div class="produto namorado">
                             <img src="imgs/Conjuntos/vestido-longo-namorados.PNG" alt="vestido">
                             <p class="nome">Vestido Longo Natália Coleção Namorados</p>
                             <p><strong> R$ 159,90 à vista</strong></p>
                             <p class="preco">6x R$ 26,65</p>
                         </div>
-                        <div class="produto">
+                        <div class="produto namorado">
                             <img src="imgs/Conjuntos/vestido-colecao-namorados.PNG" alt="vestido">
                             <p class="nome">Vestidinho Rosa bebê Coleção Namorados</p>
                             <p><strong> R$ 149,90 à vista</strong></p>
                             <p class="preco">6x R$ 24,98</p>
                         </div>
-                        <div class="produto">
+                        <div class="produto verao">
                             <img src="imgs/Conjuntos/sobretudinhos-colecao-moda-verao.PNG" alt="vestido">
                             <p class="nome">Vestidinho Coleção Moda Verão</p>
                             <p><strong> R$ 129,90 à vista</strong></p>
                             <p class="preco">6x R$ 25,98</p>
                         </div>   
-                        <div class="produto">
+                        <div class="produto verao">
                             <img src="imgs/Conjuntos/vestidinho-listrado-colecao-verao.PNG" alt="vestido">
                             <p class="nome">Vestidinho Listrado Coleção Moda Verão</p>
                             <p><strong> R$ 149,90 à vista</strong></p>
                             <p class="preco">6x R$ 24,98</p>
                         </div> 
-                        <div class="produto">
+                        <div class="produto verao">
                             <img src="imgs/Conjuntos/macacao-verao.PNG" alt="macacão">
                             <p class="nome">Conjunto Macaquinho Moda Verão</p>
                             <p><strong> R$ 149,90 à vista </strong></p>
                             <p class="preco">6x R$ 24,98</p>
                         </div>
-                        <div class="produto">
+                        <div class="produto outono">
                             <img src="imgs/Conjuntos/vestidinho-macaquinho-acinturado.PNG" alt="vestido">
                             <p class="nome">Vestidinho Acinturado Moda Outono</p>
                             <p><strong> R$ 149,90 à vista </strong></p>
                             <p class="preco">6x R$ 24,98</p>
                         </div>
-                        <div class="produto">
+                        <div class="produto outono">
                             <img src="imgs/Conjuntos/macaquinho-moda-outono.PNG" alt="macacão">
                             <p class="nome"> Macaquinho Acinturado Moda Outono</p>
                             <p><strong> R$ 149,90 à vista</strong></p>
                             <p class="preco">6x R$ 24,98</p>
                         </div>
-                        <div class="produto">
+                        <div class="produto inverno">
                             <img src="imgs/Conjuntos/conjunto-moletom.PNG" alt="moletom">
                             <p class="nome">Conjunto Moletom Moda Inverno</p>
                             <p><strong> R$ 219,90 à vista</strong></p>
                             <p class="preco">6x R$ 36,65</p>
                         </div> 
-                        <div class="produto">
+                        <div class="produto inverno">
                             <img src="imgs/Conjuntos/conjunto-vermelho-moletom-inverno.PNG" alt="moletom">
                             <p class="nome">Conjunto Manga Longa Moletom Moda Inverno</p>
                             <p><strong> R$ 219,90 à vista</strong></p>
                             <p class="preco">6x R$ 36,65</p>
                         </div> 
-                        <div class="produto">
+                        <div class="produto inverno">
                             <img src="imgs/Conjuntos/blusa-moletom-moda-inverno.PNG" alt="blusa">
                             <p class="nome">Blusa Moletom Coleção Moda Inverno</p>
                             <p><strong> R$ 199,90 à vista</strong></p>
                             <p class="preco">6x R$ 33,32</p>
                         </div> 
-                        <div class="produto">
+                        <div class="produto primavera">
                             <img src="imgs/Conjuntos/conjutinho-moda-primavera.PNG" alt="conjunto">
                             <p class="nome">Conjuntinho Básico Moda Primavera</p>
                             <p><strong> R$ 219,90 à vista</strong></p>
                             <p class="preco">6x R$ 36,65</p>
                         </div> 
-                        <div class="produto">
+                        <div class="produto primavera">
                             <img src="imgs/Conjuntos/vestido-floral-moda-primavera.PNG" alt="vestido">
                             <p class="nome">Vestidinho Floral Acinturado Moda Primavera</p>
                             <p><strong> R$ 149,90 à vista</strong></p>
                             <p class="preco">6x R$ 24,98</p>
                         </div>
                     </div>
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">4</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                        </ul>
-                    </nav>
                 </div>
             </div>
         </section>
@@ -204,6 +165,9 @@
 
     <!-- Rodapé -->           
     <div id="footer"></div>
+
+    <!-- JS -->
     <script src="JS/load.js"></script>
+    <script src="JS/filtro.js"></script>
 </body>
 </html>

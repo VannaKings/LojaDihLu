@@ -119,20 +119,17 @@
     margin-bottom: 20px
 }
 
-.container-filtro strong
+.container-filtro .filter-box
 {
-    font-weight: bold;
+    display: flex;
+    flex-direction: column;
 }
-
-.container-filtro ul
-{
-    list-style: none;
-    padding: 20px 0;
-}
-.container-filtro li
+.container-filtro a
 {
     margin-bottom: 20px;
     cursor: pointer;
+    text-decoration: none;
+    color:var(--preto) ;
 }
 
 /*  Seção Roupas ---- conteudo */
@@ -144,7 +141,6 @@
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 10px;
-    /* align-items: center; */
 }
 .produto
 {
@@ -166,7 +162,7 @@
     border-top: 2px solid var(--rosa);
     font-weight: bold;
     color: black;
-    padding-top: 5%;
+    padding-top: 5px;
     margin: 0;
 }
 
@@ -191,7 +187,6 @@
     .container-produtos{
         max-width: 100%;
         grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 0;
     }
     .container-filtro{
         max-width: 100%;
@@ -200,40 +195,34 @@
         max-width: 100%;
         max-height: 100%;
     }
-    .container-filtro span, .container-filtro i,.container-filtro p{
+    .container-filtro i,.container-filtro p{
         padding-left: 47px;
     }
     .secaoPrincipal .container {
         flex-direction: column;
     }
-    .lista_filtro{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        margin-bottom: 0;
+    .container-filtro .filter-box{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px 0;
     }
-    .lista_filtro li{
+    .filter-box a{
         text-align: center;
+        margin-left: 20px;
     }
     .produto .preco{
         font-size: 16px;
     }
-    .produto p strong{
-        border-top: 2px solid var(--rosa);
-    }
     .produto .nome{
-        border-bottom: 0px;
-       
+        border-bottom: 0px;       
     }
     
-    .secaoPrincipal .produto p strong{
-        border-top: 0px;
-    }
 }
 
 @media (max-width: 500px){
 
     /* produtos */
-    .container-filtro span, .container-filtro i, .container-filtro p {
+    .container-filtro i, .container-filtro p {
         padding-left: 20px;
     }
     .container-produtos .produto{
@@ -244,7 +233,12 @@
         max-height: 90px;
     }
     
-    .lista_filtro{
-        grid-template-columns: 1fr 1fr 1fr 1fr;        
+    .container-filtro .filter-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;     
     }    
+
+    .secaoPrincipal .produto p strong{
+        border-top: none;
+    }
 }

@@ -12,10 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
 
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/main.css">   
     <link rel="stylesheet" href="CSS/produtos.css">    
@@ -50,150 +46,114 @@
                         <strong>FILTROS</strong>
                     </div>
                     <p>Categorias</p>
-                    <span><strong>Roupas</strong></span>
-                    <ul class="lista_filtro">
-                        <li>Blusas</li>
-                        <li>Casacos</li>
-                        <li>Calças</li>
-                        <li>Saias</li>
-                        <li>Vestidos</li>                        
-                    </ul>
+                    <div class="filter-box">
+                        <a href="#" class="btn active" data-filter="todos">Todos</a>
+                        <a href="#" class="btn " data-filter="blusa">Blusas</a>
+                        <a href="#" class="btn " data-filter="casaco">Casacos</a>
+                        <a href="#" class="btn " data-filter="calca">Calças</a>
+                        <a href="#" class="btn " data-filter="saia">Saias</a>
+                        <a href="#" class="btn " data-filter="vestido">Vestidos</a>
+                    </div>
                 </div>
                 <div class="container-nav-produtos">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">4</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                        </ul>
-                    </nav>
                     <div class="container-produtos">
-                        <div class="produto">
+                        <div class="produto vestido">
                             <img src="imgs/Vestidos/vestido-rodado-verao.PNG" alt="vestido">
                             <p class="nome">Vestido Rodado Moda Verão</p>
                             <p><strong> R$ 159,90 à vista</strong></p>
                             <p class="preco">6x R$ 26,65</p>
                         </div>
-                        <div class="produto">
+                        <div class="produto vestido">
                             <img src="imgs/Vestidos/vestido-boneca-alcinha.JPG" alt="vestido">
                             <p class="nome">Vestido Boneca - Rodado - Alcinha</p>
                             <p><strong> R$ 159,90 à vista</strong></p>
                             <p class="preco">6x R$ 26,65</p>
                         </div>
-                        <div class="produto">
+                        <div class="produto blusa">
                             <img src="imgs/Blusas/blusa-manga-com-pregas.JPG" alt="blusa">
                             <p class="nome">Blusinha C/ Decote - Azul </p>
                             <p><strong> R$ 59,90 à vista </strong></p>
                         <p class="preco">2x R$ 29,95</p>
                         </div>
-                        <div class="produto">
+                        <div class="produto blusa">
                             <img src="imgs/Blusas/blusinha-basica-margarida.JPG" alt="blusa ">
                             <p class="nome">Blusinha Básica - Margarida</p>
                             <p><strong> R$ 49,90 à vista </strong></p>
                             <p class="preco">2x R$ 24,95</p>
                         </div>
-                        <div class="produto">
+                        <div class="produto casaco">
                             <img src="imgs/Casacos/sobretudo-xadrez.JPG" alt="sobretudo">
                             <p class="nome">Sobretudo Xadrez - Preto e Branco</p>
                             <p><strong> R$ 149,90 à vista </strong></p>
                             <p class="preco">6x R$ 24,98</p>
                         </div>
-                        <div class="produto">
+                        <div class="produto vestido">
                             <img src="imgs/Vestidos/vestido-macaquinho.png" alt="vestido">
                             <p class="nome">Vestido Macaquinho - Acinturado</p>
                             <p><strong> R$ 129,90 à vista</strong></p>
                             <p class="preco">6x R$ 25,98</p>
                         </div>
-                        <div class="produto">
+                        <div class="produto saia">
                             <img src="imgs/Saias/saia-couro.png" alt="saia">
                             <p class="nome">Saia de Couro Síntetico - Moda Verão 2022</p>
                             <p><strong> R$ 89,90 à vista</strong></p>
                             <p class="preco">3x R$ 29,97</p>
                         </div>
-                        <div class="produto">
+                        <div class="produto calca">
                             <img src="imgs/Calcas/calca-jeans.png" alt="calça">
                             <p class="nome">Calça Jeans Básica - Moda Alvorada</p>
                             <p><strong> R$ 99,90 à vista</strong></p>
                             <p class="preco">3x R$ 33,3</p>
                         </div>
-                        <div class="produto">
+                        <div class="produto blusa">
                             <img src="imgs/Conjuntos/conjunto-festa.JPG" alt="conjunto">
                             <p class="nome">Conjunto festa - Blusa com Bojo e Short Saia</p>
                             <p><strong> R$ 199,90 à vista</strong></p>
                             <p class="preco">6x R$ 33,32</p>
                         </div>
-                        <div class="produto">
+                        <div class="produto vestido">
                             <img src="imgs/Vestidos/vestido-boneca-ombro-a-ombro.JPG" alt="vestido">
                             <p class="nome">Vestido Boneca - Ombro a Ombro</p>
                             <p><strong> R$ 159,90 à vista</strong></p>
                             <p class="preco">6x R$ 26,65</p>
                         </div>
-                        <div class="produto">
+                        <div class="produto saia">
                             <img src="imgs/Saias/saia-xadrez.png" alt="saia">
                             <p class="nome"> Saia Xadrez - Moda Colegial</p>
                             <p><strong> R$ 74,90 à vista</strong></p>
                             <p class="preco">3x R$ 24,97</p>
                         </div>
-                        <div class="produto">
+                        <div class="produto vestido">
                             <img src="imgs/Vestidos/vestido-tubinho.JPG" alt="vestido">
                             <p class="nome">Vestido Tubinho - Acinturado</p>
                             <p><strong> R$ 159,90 à vista</strong></p>
                             <p class="preco">6x R$ 26,65</p>
                         </div>
-                        <div class="produto">
+                        <div class="produto calca">
                             <img src="imgs/Calcas/calça-legging-preta.png" alt="calça">
                             <p class="nome">Calça Legging Skinny - Cintura Alta</p>
                             <p><strong> R$ 120,90 à vista</strong></p>
                             <p class="preco">5x R$ 24,18</p>
                         </div> 
-                        <div class="produto">
+                        <div class="produto vestido">
                             <img src="imgs/Vestidos/sobretudinho-verao.PNG" alt="vestido">
                             <p class="nome">Vestidinhos Moda Verão</p>
                             <p><strong> R$ 129,90 à vista</strong></p>
                             <p class="preco">6x R$ 25,98</p>
                         </div>   
-                        <div class="produto">
+                        <div class="produto blusa">
                             <img src="imgs/Blusas/blusa-oncinha.JPG" alt="blusa">
                             <p class="nome"> Blusinha Manga Curta - Oncinha</p>
                             <p><strong> R$ 59,90 à vista</strong></p>
                             <p class="preco">2x R$ 29,95</p>
                         </div> 
-                        <div class="produto">
+                        <div class="produto saia">
                             <img src="imgs/Saias/saia-alfaitaria.PNG" alt="saia">
                             <p class="nome"> Saia Alfataria - Verão 2022</p>
                             <p><strong> R$ 74,90 à vista</strong></p>
                             <p class="preco">3x R$ 24,97</p>
                         </div>                                                  
                     </div>
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">4</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                        </ul>
-                    </nav>
                 </div>
             </div>
             
@@ -220,9 +180,7 @@
     <div id="footer"></div>
 
     <!-- JS -->
-    <script>
-    $("#header").load("header.html");
-    $("#footer").load("footer.html");
-    </script>
+    <script src="JS/load.js"></script>
+    <script src="JS/filtro.js"></script>
 </body>
 </html>
